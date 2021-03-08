@@ -1,6 +1,6 @@
 node {
   stage('SCM checkout') {
-    git 'https://github.com/Rakhee99/clone-check'
+    git credentialsId: 'f461d2a6-f07b-491b-a9d7-b361cf79644d', url: 'https://github.com/Rakhee99/checking-maven.git'
   }
   stage ('compile Package') {
     // get maven home
